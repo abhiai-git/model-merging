@@ -29,3 +29,12 @@ While the primary focus is on homogeneous merging, this repository also conceptu
 The conceptual approach involves the use of **projector layers**. These layers act as bridges, transforming the representations from one model's architecture into a compatible format for another. This allows for the integration of diverse models, each potentially specialized in different tasks or data modalities, into a unified framework. This section outlines the theoretical underpinnings and potential implementation strategies for such a system.
 
 *(Image: Diagram illustrating heterogeneous model merging with projector layers, showing different model architectures connected via projectors.)*
+
+## Hugging Face Integration
+
+This project leverages the Hugging Face ecosystem for seamless model management and sharing. Users can:
+
+*   **Pull Models with Login:** Authenticate with Hugging Face to access and download a wide range of pre-trained models from the Hugging Face Hub. This allows for easy experimentation with various expert models as inputs for the merging process.
+*   **Push Merged Models:** After successfully merging models, the resulting unified Mixture-of-Experts model can be pushed back to the Hugging Face Hub. This facilitates sharing, version control, and further deployment of the merged models within the broader AI community.
+
+To interact with Hugging Face, ensure you have the `huggingface_hub` library installed and are logged in using `huggingface-cli login`.
